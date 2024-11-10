@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image1.jpeg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+    height: 100%; /* Ensures the body takes up the full height of the page */
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Ensures sections are stacked vertically */
+    justify-content: flex-start; /* Aligns content at the top */
+    align-items: center; /* Centers the sections horizontally */
+}
+
+header {
+    background-color: rgba(76, 175, 80, 0.8); /* Green background with transparency */
+    color: white;
+    padding: 1em;
+    text-align: center;
+    width: 100%; /* Ensures the header spans the full width */
+    z-index: 1;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2em;
+    margin: 20px 0; /* Adds space between sections */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+    border-radius: 8px;
+    width: 90%; /* Ensures sections are not too wide */
+    max-width: 1200px; /* Limits the maximum width of the sections */
+    box-sizing: border-box; /* Includes padding and margin in the width/height calculation */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form button {
+    margin-bottom: 15px;
+}
+
+form input, form button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

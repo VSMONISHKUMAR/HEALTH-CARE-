@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Healthcare Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#telemedicine">Telemedicine</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Registration Section -->
+    <section id="register">
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Appointment Scheduling Section -->
+    <section id="appointments">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <!-- Telemedicine Section -->
+    <section id="telemedicine">
+        <h2>Telemedicine</h2>
+        <button onclick="startTelemedicine()">Start Consultation</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
